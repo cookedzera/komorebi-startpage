@@ -1,0 +1,21 @@
+{
+  "name": "komorebi-startpage",
+  "version": "1.0.0",
+  "description": "A beautiful lofi-minimal browser startpage with customizable widgets",
+  "author": "cookedzera",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "lint": "npx eslint src/**/*.js --fix",
+    "lint:css": "npx stylelint src/**/*.css --fix"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "startpage",
+    "browser-extension",
+    "lofi",
+    "minimal",
+    "aesthetic"
+  ]
+}

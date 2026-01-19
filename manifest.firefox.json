@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Komorebi - Lofi Startpage",
+    "version": "1.0.0",
+    "description": "A beautiful lofi-themed new tab page with glassmorphism effects, custom quotes, and bookmarks",
+    "author": "cookedzera",
+    "homepage_url": "https://github.com/cookedzera/komorebi-startpage",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "icons": {
+        "16": "src/img/logo16.png",
+        "48": "src/img/logo48.png",
+        "128": "src/img/logo128.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "komorebi@startpage.local",
+            "strict_min_version": "109.0"
+        }
+    },
+    "permissions": [
+        "storage"
+    ]
+}

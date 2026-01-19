@@ -1,0 +1,25 @@
+{
+    "name": "Komorebi - Lofi Startpage",
+    "short_name": "Komorebi",
+    "theme_color": "#2a2b26",
+    "background_color": "#2a2b26",
+    "display": "standalone",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "src/img/logo16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "src/img/logo48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "src/img/logo128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}

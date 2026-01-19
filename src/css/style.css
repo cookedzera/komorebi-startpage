@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+
+    list-style: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -ms-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*:not(:defined) {
+    display: none;
+}
+
+/* Modern Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(169, 182, 101, 0.2);
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(169, 182, 101, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Accessible Focus Outlines */
+*:focus-visible {
+    outline: 2px solid var(--color-accent-olive);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline-color: var(--color-accent-sepia);
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--color-bg-primary);
+    /* Fallback */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+tabs-list {
+    --tab-height: 100vh;
+    height: var(--tab-height);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Responsive Breakpoints */
+@media (max-width: 600px) {
+
+    /* Reduce spacing on mobile */
+    :root {
+        --space-sm: 6px !important;
+        --space-md: 12px !important;
+        --space-lg: 16px !important;
+    }
+
+    /* Adjust quote for mobile */
+    quote-widget {
+        font-size: 10px;
+    }
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--bg);
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

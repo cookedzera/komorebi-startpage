@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+*.zip
+dist/
+build/
+
+# Large assets (not needed for extension)
+docs/screenshotss/
+komorebi-v*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Temporary files
+*.tmp
+*.temp
